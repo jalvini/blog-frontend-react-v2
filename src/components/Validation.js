@@ -11,6 +11,8 @@ const validate = (value, rules) => {
 
             case 'isEmail': isValid = isValid && emailValidator(value); break;
 
+            case 'passwordCheck': isValid = isValid && passwordValidator(value); break;
+
             default: isValid = true;
         }
 
@@ -49,6 +51,11 @@ const requiredValidator = value => {
 const emailValidator = value => {
     var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(value).toLowerCase());
+};
+
+const passwordValidator = value => {
+    var re = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).*([!@#$%^&*()]).*$/;
+    return re.test(String(value));
 };
 
 
