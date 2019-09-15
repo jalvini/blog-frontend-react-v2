@@ -8,7 +8,7 @@ const FormInputError = props => {
     };
 
     return (
-            <div>{errorHandler()}</div>
+            <div className={"error_text"}>{errorHandler()}</div>
     );
 };
 
