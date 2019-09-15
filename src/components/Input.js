@@ -1,20 +1,22 @@
-import React from 'react';
+import React,{Component} from 'react';
+import FormInputError from "./FormInputError";
 
-const TextInput = props => {
+class TextInput extends Component {
 
-    let formControl = "form-control";
+    render() {
+        const { valid, errorMessage, touched, ...props } = this.props;
 
-    let touched = props.touched ? props.touched  : false;
-
-    if (touched && !props.valid) {
-        formControl = 'form-control control-error';
+        return (
+            <div className={"form_group_text_input"}>
+                <input type="text" {...props} />
+                <FormInputError
+                    errorMessage={this.props.errorMessage}
+                    touched={this.props.touched}
+                    valid={this.props.valid}
+                />
+            </div>
+        );
     }
-
-    return (
-        <div className="form-group">
-            <input type="text" className={formControl}  {...props} />
-        </div>
-    );
-};
+}
 
 export default TextInput;
