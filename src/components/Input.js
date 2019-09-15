@@ -8,7 +8,7 @@ class TextInput extends Component {
 
         return (
             <div className={"form_group_text_input"}>
-                <input type="text" {...props} />
+                <input {...props} />
                 <FormInputError
                     errorMessage={this.props.errorMessage}
                     touched={this.props.touched}
