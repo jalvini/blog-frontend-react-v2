@@ -1,0 +1,66 @@
+.input_box {
+  border: 1px solid #ccc;
+  padding: 10px 0;
+  color: #333;
+  width: 100%;
+  outline: 0;
+}
+
+.input_warning {
+  border: 1px solid yellow;
+  padding: 10px 0;
+  color: #333;
+  width: 100%;
+  outline: 0;
+}
+
+.input_error {
+  border: 1px solid red;
+  padding: 10px 0;
+  color: #333;
+  width: 100%;
+  outline: 0;
+}
+
+.input_success {
+  border: 1px solid green;
+  padding: 10px 0;
+  color: #333;
+  width: 100%;
+  outline: 0;
+}
+
+.contact_form_button {
+  background: orangered;
+  color: white;
+  border: none;
+  outline: 0;
+}
+.contact_form_button:disabled {
+  border: none;
+  background: grey;
+  color: white;
+  height: 30px;
+}
+
+.form_group_text_input {
+  margin: 10px 0;
+  min-height: 50px;
+}
+
+.contact_form {
+  width: 50%;
+  margin: 0 auto !important;
+}
+
+.error_text {
+  font-size: x-small;
+  color: red;
+}
+
+.contact_form_button {
+  width: 100%;
+  height: 30px;
+}
+
+/*# sourceMappingURL=Form.css.map */

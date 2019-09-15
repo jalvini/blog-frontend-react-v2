@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Sigmar+One&display=swap");
+.secondary_links, .logo_container {
+  border-bottom: 1px solid #ccc;
+  background: white;
+}
+
+.link_bar, .secondary_links {
+  height: 35px;
+  padding-left: 20px;
+}
+
+.link_bar a, .secondary_links a {
+  display: inline-block;
+  padding-top: 3px;
+  width: 6%;
+}
+
+.App {
+  text-align: center;
+}
+
+.logo_container {
+  height: 70px;
+  font-family: "Sigmar One", cursive;
+}
+
+.logo {
+  font-size: 32px;
+  display: inline-block;
+  color: dodgerblue;
+}
+.logo img {
+  height: 60px;
+  width: 60px;
+  margin: 3px 30%;
+}
+
+.secondary_links {
+  border-left: 1px solid #ccc;
+}
+.secondary_links a {
+  color: #282c34;
+}
+
+.link_bar {
+  background: dodgerblue;
+}
+.link_bar a {
+  color: white;
+}
+
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/*# sourceMappingURL=Layout.css.map */
