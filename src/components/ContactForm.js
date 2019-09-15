@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import TextInput from './Input';
 import validate from './Validation';
 
-class FormComponent extends Component {
+class ContactForm extends Component {
 
     constructor() {
         super();
@@ -13,38 +13,43 @@ class FormComponent extends Component {
             formControls: {
                 name: {
                     value: '',
+                    type: 'text',
                     valid: false,
                     validationRules: {
                         isRequired: true,
+                        minLength: 2,
                     },
                     className: 'input_box',
                     errorMessage: 'name is required',
                     placeholderText: 'Your Name',
-                    touched: false
+                    touched: false,
                 },
                 email: {
                     value: '',
+                    type: 'text',
                     valid: false,
                     validationRules: {
                         isRequired: true,
-                        isEmail: false,
+                        isEmail: true,
                     },
                     className: 'input_box',
                     errorMessage: 'email has to be valid email address',
                     placeholderText: 'Your Email',
-                    touched: false
+                    touched: false,
                 },
                 password: {
                     value: '',
+                    type: 'password',
                     valid: false,
                     validationRules: {
                         isRequired: true,
                         minLength: 6,
+                        passwordCheck: true,
                     },
                     className: 'input_box',
-                    errorMessage: 'password needs to be 6 characters',
+                    errorMessage: 'password must be 6 letters, 1 number, capital letter and special character',
                     placeholderText: 'Your Password',
-                    touched: false
+                    touched: false,
                 }
 
             }
@@ -92,6 +97,7 @@ class FormComponent extends Component {
             <div>
                 <TextInput name="name"
                            placeholder={this.state.formControls.name.placeholderText}
+                           type={this.state.formControls.name.type}
                            value={this.state.formControls.name.value}
                            onChange={this.changeHandler}
                            className ={this.state.formControls.name.className}
@@ -102,6 +108,7 @@ class FormComponent extends Component {
 
                 <TextInput name="email"
                            placeholder={this.state.formControls.email.placeholderText}
+                           type={this.state.formControls.email.type}
                            value={this.state.formControls.email.value}
                            onChange={this.changeHandler}
                            className ={this.state.formControls.email.className}
@@ -112,6 +119,7 @@ class FormComponent extends Component {
 
                 <TextInput name="password"
                            placeholder={this.state.formControls.password.placeholderText}
+                           type={this.state.formControls.password.type}
                            value={this.state.formControls.password.value}
                            onChange={this.changeHandler}
                            className ={this.state.formControls.password.className}
@@ -122,6 +130,7 @@ class FormComponent extends Component {
 
                 <button onClick={this.formSubmitHandler}
                         disabled={!this.state.formIsValid}
+                        className={"contact_form_button"}
                 >
                     Submit
                 </button>
@@ -131,4 +140,4 @@ class FormComponent extends Component {
 
 }
 
-export default FormComponent;
+export default ContactForm;
