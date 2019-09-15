@@ -5,7 +5,7 @@ class Contact extends Component {
     render() {
         return(
             <div className="container">
-                <h3>React Form</h3>
+                <h3>Contact Form</h3>
                 <FormComponent />
             </div>
         )
