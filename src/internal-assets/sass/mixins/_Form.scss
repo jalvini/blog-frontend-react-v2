@@ -1,0 +1,29 @@
+@mixin form_input_box($name, $border-color) {
+  .input_#{$name} {
+    border: 1px solid $border-color;
+    padding: 10px 0;
+    color: #333;
+    width: 100%;
+    outline: 0;
+  }
+}
+
+@include form_input_box("box", #ccc);
+@include form_input_box("warning", yellow);
+@include form_input_box("error", red);
+@include form_input_box("success", green);
+
+%form_button {
+  background: orangered;
+  color: white;
+  border: none;
+  outline: 0;
+
+  &:disabled {
+    border: none;
+    background: grey;
+    color: white;
+    height:30px;
+  }
+}
+
