@@ -45,6 +45,7 @@
   cursor: pointer;
   line-height: 1.5;
 }
+
 .todo-item__text--completed {
   text-decoration: line-through;
   color: lightgray;
@@ -56,17 +57,9 @@
   margin: 0 0.3rem;
   cursor: pointer;
 }
+
 .filter--active {
   border-bottom: 1px solid black;
-}
-.form-control {
-  width: 50%;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-.control-error {
-  border: 1px solid red;
 }
 
 @keyframes App-logo-spin {
@@ -77,3 +70,36 @@
     transform: rotate(360deg);
   }
 }
+.input_box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  width: 50%;
+}
+
+.input_warning {
+  border: 1px solid yellow;
+  padding: 10px;
+  color: #333;
+  width: 50%;
+}
+
+.input_error {
+  border: 1px solid red;
+  padding: 10px;
+  color: #333;
+  width: 50%;
+}
+
+.input_success {
+  border: 1px solid green;
+  padding: 10px;
+  color: #333;
+  width: 50%;
+}
+
+.form_group_text_input {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=App.css.map */
