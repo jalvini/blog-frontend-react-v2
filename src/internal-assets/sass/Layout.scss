@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
 @import "mixins/_Layout";
 
+header {
+  position: fixed;
+  z-index: 1000;
+  width:100%;
+}
+
+.spacer
+{
+  height: $header_child_container_size * 2;
+  margin-bottom: 60px;
+}
+
+footer {
+  margin-top: 60px;
+  border-top: 1px solid #bbb;
+  min-height: 250px;
+}
+
+body {
+  color: $page_font_color;
+}
+
 .App {
   text-align: center;
 }
@@ -47,5 +69,3 @@
   padding-right:0;
   padding-left:0;
 }
-
-
