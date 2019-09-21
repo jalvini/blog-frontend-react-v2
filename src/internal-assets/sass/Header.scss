@@ -1,0 +1,47 @@
+@import "./mixins/_Header";
+
+header {
+  position: fixed;
+  z-index: 1000;
+  width:100%;
+  border-bottom: $header_border;
+  background: white;
+}
+
+.logo {
+  font-size: 32px;
+  display: inline-block;
+
+  img{
+    height: 60px;
+    width: 60px;
+    margin: 3px 30%;
+  }
+}
+
+.link_bar{
+  @extend %header_link_bars;
+  background: $header_background_color;
+  a {
+    @include header_links(white);
+  }
+}
+
+.secondary_links {
+  @extend %header_link_bars;
+  border-left: $header_border;
+
+  a {
+    @include header_links(#282c34);
+  }
+}
+
+.spacer
+{
+  height: $header_child_container_size * 2;
+  margin-bottom: $header_footer_margin;
+}
+
+.logo_container {
+  height: $header_child_container_size * 2;
+}

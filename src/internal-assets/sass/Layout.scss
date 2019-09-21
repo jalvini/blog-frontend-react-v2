@@ -1,68 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
-@import "mixins/_Layout";
-
-header {
-  position: fixed;
-  z-index: 1000;
-  width:100%;
-}
-
-.spacer
-{
-  height: $header_child_container_size * 2;
-  margin-bottom: 60px;
-}
-
-footer {
-  margin-top: 60px;
-  border-top: 1px solid #bbb;
-  min-height: 250px;
-}
+@import "Header";
+@import "Footer";
 
 body {
   color: $page_font_color;
-}
-
-.App {
-  text-align: center;
-}
-
-.logo_container {
-  @extend %header_white_background_with_bottom_border;
-  height: $header_child_container_size * 2;
-  font-family: 'Sigmar One', cursive;
-}
-
-.logo {
-  font-size: 32px;
-  display: inline-block;
-  color: dodgerblue;
-
-  img{
-    height: 60px;
-    width: 60px;
-    margin: 3px 30%;
-  }
-}
-
-.secondary_links {
-  @extend %header_white_background_with_bottom_border;
-  @extend %header_link_bars;
-  border-left: 1px solid $header_border_color;
-
-  a {
-    @extend %header_link_inline;
-    color: #282c34;
-  }
-}
-
-.link_bar{
-  @extend %header_link_bars;
-  background: $header_background_color;
-  a {
-    @extend %header_link_inline;
-    color: white;
-  }
 }
 
 .padding-0{

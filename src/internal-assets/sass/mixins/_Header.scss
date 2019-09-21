@@ -1,0 +1,13 @@
+@import "../Variables";
+
+@mixin header_links($color) {
+  color: $color;
+  display: inline-block;
+  padding-top: 3px;
+  padding-right: 5%;
+}
+
+%header_link_bars {
+  height: $header_child_container_size;
+  padding-left: 20px;
+}

@@ -1,0 +1,7 @@
+@import "./Variables";
+
+footer {
+  margin-top: $header_footer_margin;
+  border-top: 1px solid #bbb;
+  min-height: 250px;
+}

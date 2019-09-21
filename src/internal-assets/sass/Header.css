@@ -50,19 +50,4 @@ header {
   height: 70px;
 }
 
-footer {
-  margin-top: 60px;
-  border-top: 1px solid #bbb;
-  min-height: 250px;
-}
-
-body {
-  color: #777;
-}
-
-.padding-0 {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-/*# sourceMappingURL=Layout.css.map */
+/*# sourceMappingURL=Header.css.map */
